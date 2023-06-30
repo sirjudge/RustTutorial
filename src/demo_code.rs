@@ -1,3 +1,4 @@
+#[warn(unused_assignments)]
 
 fn tuples() {
     let location = ("KCLE", 41.4094069,-81.8546911);
