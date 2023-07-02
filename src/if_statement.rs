@@ -2,7 +2,7 @@
 // variables as this is a tutorial we can ignore these warnings
 #![allow(unused_variables)]
 #![allow(dead_code)]
-
+#![allow(irrefutable_let_patterns)]
 
 pub fn if_statement_example() {
     let word = "Duck";
@@ -24,4 +24,12 @@ pub fn airplane_if(){
     if available_aircraft == "boeing" || available_aircraft == "Airbus" && minimum_crew < available_crew{
         println!("okay");
     }
+}
+
+pub fn if_let_statement(){
+    let animal = "duck";
+    if let animal = "duck" {
+        println!("quack!");
+    }
+
 }
